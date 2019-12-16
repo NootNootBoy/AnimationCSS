@@ -43,3 +43,7 @@ button {
   margin: 2px 2px;
   cursor: pointer;
 }
+
+button:active + .carteVu > .carteHide {
+  visibility: hidden;
+}
