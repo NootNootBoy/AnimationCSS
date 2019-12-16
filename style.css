@@ -42,11 +42,13 @@ button {
   font-size: 16px;
   margin: 2px 2px;
   cursor: pointer;
-  transition: ease 1s;
+  opacity: 1;
 }
 
 button:hover + .carteVu > .carteHide {
-  width: 10px;
-  height: 10px;
-  transition: 1s;
+  transform: translate(0px, 0px);
+  opacity: 0;
+}
+button + .carteVu > .carteHide {
+  transition: ease 0.5s;
 }
