@@ -42,8 +42,11 @@ button {
   font-size: 16px;
   margin: 2px 2px;
   cursor: pointer;
+  transition: ease 1s;
 }
 
-button:active + .carteVu > .carteHide {
-  visibility: hidden;
+button:hover + .carteVu > .carteHide {
+  width: 10px;
+  height: 10px;
+  transition: 1s;
 }
